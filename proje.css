@@ -1,0 +1,45 @@
+body,h1,ul,li{
+    margin: 0;
+    padding: 0;
+}
+ 
+body{
+    background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCSmZNDC5JCvhW8T6AqikcCKCsjSlF3-UGdA&usqp=CAU)7777#;
+    font-family: sans-serif;
+
+}
+
+.orta{
+    margin-top: 15px;
+    background: #777;
+    text-align: center;
+	color: #fff;
+}
+ 
+.orta a{
+    margin-top: 15px;
+    background: #666;
+    text-align: center;
+	color: #fff;
+}
+.orta b{
+    margin-top: 15px;
+    background: #666;
+    text-align: center;
+	color: #fff;
+}	
+ 
+ 
+.alt{
+    background: #555;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+.alt a{
+     color: #fff;
+}
+ 
+.son{
+    clear: both;
+}
