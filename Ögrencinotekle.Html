@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="Proje2.css" rel="stylesheet"> 
+  <script type="text/javascript" src="Proje2.js"></script>
+  <title>Proje</title>
+  </head>
+  <style>
+    #sayfa{
+      width: 400px;
+      margin:auto;
+      background: #444;
+      padding:15px;
+    }
+    label{
+      display:block;
+      margin-top:5px;
+    }
+    input{
+      width: 300px;
+      height: 25px;
+      font-size:1.2em;
+    }
+    button{
+      border:none;
+      display:block;
+      margin-top:5px;
+      width: 204px;
+      height: 50px;
+      text-align: center;
+      font-size:1.2em;
+    }
+    table{
+      background: #0984e3;
+      margin:5px;
+      width: 50%;
+      color:#fff;
+    }
+    td,th{
+      border:1px solid white;
+      border-spacing: 0px;
+      margin: 0px;
+    }
+</style>
+</head>
+<body>
+<nav>
+<<div class="menu">
+ <center><nav>
+    <ul>  		 
+		 
+       <li><a href="proje2.html">Ana Sayfa</a>
+			
+			 </ul>
+</nav></center>
+ 
+    
+</nav></center>
+
+</div><center>
+<div class="sayfa">
+ 
+  <div id="sayfa">
+    <label>Adı:</label>    <input type="text"  id="ad">
+    <label>Soyadı:</label> <input type="text"  id="soyad">
+    <label>Email:</label>   <input type="text"  id="email">
+	<label>Vize Notu:</label>   <input type="number"  id="not">
+	<label>Final Notu:</label>   <input type="number"  id="Not">
+    <center><button id="ekle">Kaydet</button></center>
+	</div>
+	<table id="liste">
+      <tr>
+        <th>Adı</th>
+        <th>Soyadı</th>
+        <th>Email</th>
+		<th>Vize Notu</th>
+		<th>Final Notu</th>
+      </tr>
+  </table>
+  </div>
+ </center>
+ 
+  <script>
+    const ad=document.querySelector("#ad");
+    const soyad=document.querySelector("#soyad");
+    const email=document.querySelector("#email");
+	const not=document.querySelector("#not");
+	const Not=document.querySelector("#Not");
+    const ekle=document.querySelector("#ekle");
+    const liste=document.querySelector("#liste");
+ 
+    ekle.onclick=function(){
+      
+      
+      
+      let tAd=document.createElement("td");
+      let tSoyad=document.createElement("td");
+      let tEmail=document.createElement("td");
+	  let tnot=document.createElement("td");
+      let tNot=document.createElement("td");
+	  
+      tAd.textContent=ad.value;
+      tSoyad.textContent=soyad.value;
+      tEmail.textContent=email.value;
+      tnot.textContent=not.value;
+	  tNot.textContent=not.value;
+ 
+      
+      let tr=document.createElement("tr");
+ 
+      
+      tr.appendChild(tAd);
+      tr.appendChild(tSoyad);
+      tr.appendChild(tEmail);
+	  tr.appendChild(tnot);
+      tr.appendChild(tNot);
+	  
+      /
+      liste.appendChild(tr);
+ 
+      
+      ad.value="";
+      soyad.value="";
+      email.value="";
+	  not.value="";
+	  Not.value="";
+ 
+      
+      ad.focus();
+	  
+    }
+ 
+	
+ 
+  </script>
+</body>
+</html>

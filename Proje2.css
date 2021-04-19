@@ -1,0 +1,82 @@
+ #sayfa{
+     
+      margin-top: 50px;
+	  text-align: center;
+	  background: #333;
+      color: #fff;
+    }
+    label{
+      display:block;
+      margin-top:5px;
+    }
+    input{
+      width: 200px;
+      height: 25px;
+      font-size:1.2em;
+    }
+    button{
+      border:none;
+      display:block;
+      margin-top:5px;
+      width: 204px;
+      height: 50px;
+      text-align: center;
+      font-size:1.2em;
+    }
+    td,th{
+      border:1px solid white;
+      border-spacing: 0px;
+      margin: 0px;
+    }
+	 #baslik{
+    float: left;
+    font-size: 1.2em;
+    color: white;
+    text-decoration: none;
+}
+.menu{
+		margin:50px;
+	}
+	.menu ul{
+		list-style:none;
+		margin:0px;
+		padding:0px;
+	}
+	.menu li{
+		float:center;
+		position:relative;
+		width:228px;	
+	}
+	.menu ul li ul{
+		display:none;
+	}
+	.menu ul li:hover ul{
+		display:block;
+	}
+	.menu ul li a{
+		text-decoration:none;
+		background:#1E90FF;
+		display:block;
+		color:white;
+		font-weight:bold;
+		text-align:center;
+		border-bottom:2px;
+		border-left:1px solid white;
+		padding:5px;
+		border-radius:15px;
+	}
+	.menu ul li ul li a{
+        background: #1E90FF;
+        text-align: left;
+        padding: 5px;
+        border-bottom: 1px solid;
+		font-size: 1em;
+	}
+	.menu li a:hover{
+		background: red;
+		transition: 1s;
+	}
+	.menu ul li ul li a:hover{
+		padding-left:15px;
+	}
+	
